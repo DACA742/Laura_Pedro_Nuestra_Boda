@@ -8,7 +8,7 @@ interface OpeningPageProps {
 }
 
 export function OpeningPage({ onOpen }: OpeningPageProps) {
-  const [playSound] = useSound('/wedding-march.mp3');
+  const [playSound] = useSound('/song.mp3');
 
   const handleOpen = () => {
     playSound();
