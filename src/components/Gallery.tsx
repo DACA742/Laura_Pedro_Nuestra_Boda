@@ -1,7 +1,6 @@
 import React from 'react';
 
 const photos = [
-  "img/fecha.mp4",
   "img/mano.jpg",
   "img/Playa2.jpg",
   "img/Playa.jpg",
