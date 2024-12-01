@@ -41,7 +41,7 @@ export function LocationMap() {
           {/* Sección de la Iglesia */}
           <h2 className="font-serif text-3xl mb-4 text-antiflash-white flex items-center gap-2">
             <MapPin className="w-6 h-6" />
-            Cómo Llegar a Ceremoniaa
+            Cómo Llegar a Ceremonia
           </h2>
           <p className="text-antiflash-white/90 mb-6">
             Capilla San Peregrino Laziosi<br />

@@ -78,7 +78,7 @@ export function Welcome() {
             className="space-y-4 mb-8"
           >
             <p className="font-serif text-2xl md:text-3xl text-antiflash-white/90">
-              Nos Casamos
+              ¡Nos Casamos!
             </p>
           </motion.div>
 

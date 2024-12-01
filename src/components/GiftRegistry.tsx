@@ -4,7 +4,7 @@ import { Gift, CreditCard, Home } from 'lucide-react';
 
 const gifts = [
   {
-    icon: <CreditCard className="w-6 h-6" />,
+    icon: <Gift className="w-6 h-6" />,
     title: "Mesa de Regalos Amazon",
     description: "Vista nuestra lista de regalos en Amazon",
     link: "https://www.amazon.com.mx/wedding/share/15022025"
@@ -14,6 +14,11 @@ const gifts = [
     title: "Mesa de Regalos Liverpool",
     description: "Código: 51541356",
     link: "https://mesaderegalos.liverpool.com.mx/?gclid=CjwKCAjw0dKXBhBPEiwA2bmObYoKL11BMWYxQykc2NjmPTaz3b5Lcb2l-Zqv-PN5tsFBBhyVCi8UIRoCyR0QAvD_BwE"
+  },
+  {
+    icon: <Gift className="w-6 h-6" />,
+    title: "Lluvia de sobres",
+    description: "En el evento contaremos con un buzón para recibir tus sobres de regalo"
   }
 ];
 
