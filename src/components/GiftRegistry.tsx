@@ -13,7 +13,7 @@ const gifts = [
     icon: <Gift className="w-6 h-6" />,
     title: "Mesa de Regalos Liverpool",
     description: "Código: 51541356",
-    link: "https://mesaderegalos.liverpool.com.mx/?gclid=CjwKCAjw0dKXBhBPEiwA2bmObYoKL11BMWYxQykc2NjmPTaz3b5Lcb2l-Zqv-PN5tsFBBhyVCi8UIRoCyR0QAvD_BwE"
+    link: "https://mesaderegalos.liverpool.com.mx/milistaderegalos/51541356"
   },
   {
     icon: <Gift className="w-6 h-6" />,

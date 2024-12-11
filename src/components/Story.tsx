@@ -51,15 +51,28 @@ export function Story() {
           <p className="font-serif text-2xl md:text-3xl text-jet">
             Padres de la Novia:
           </p>
-          <p className="text-xl text-dim-gray">Roberto Ocaña y Yolanda Bueno</p> {/* Reemplaza por los nombres reales */}
+          <div className="text-xl text-dim-gray">
+            <p>Roberto Ocaña</p>
+            <p>Yolanda Bueno</p>
+          </div>
 
           {/* Parents of the Groom */}
           <p className="font-serif text-2xl md:text-3xl text-jet mt-8">
             Padres del Novio:
           </p>
-          <p className="text-xl text-dim-gray">Raul Chávez y Beatriz Arteaga</p> {/* Reemplaza por los nombres reales */}
+          <div className="text-xl text-dim-gray">
+            <p>Raul Chávez</p>
+            <p>Beatriz Arteaga</p>
+          </div>
 
-
+          {/* Padrinos de Velación */}
+          <p className="font-serif text-2xl md:text-3xl text-jet mt-8">
+            Padrinos de Velación:
+          </p>
+          <div className="text-xl text-dim-gray">
+            <p>Jaime Meza</p> {/* Reemplaza con el nombre real */}
+            <p>Araceli Bueno</p> {/* Reemplaza con el nombre real */}
+          </div>
         </motion.div>
       </div>
     </motion.section>

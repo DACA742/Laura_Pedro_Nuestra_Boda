@@ -40,7 +40,15 @@ export function RSVP() {
   return (
     <section className="max-w-md mx-auto p-8">
       <h2 className="font-serif text-3xl mb-6 text-center text-jet">Confirma tu Asistencia</h2>
-      <form name="contact-form" method="post" action="" onSubmit={handleSubmit} className="space-y-4">
+      
+      {/* Confirmation Message */}
+      <div className="mt-4 text-center text-sm text-dim-gray">
+        <p>
+          Por cuestiones de organización, te pedimos confirmar a más tardar el 10 de enero y respetar la cantidad de asientos asignados.
+        </p>
+      </div>
+
+      <form name="contact-form" method="post" action="" onSubmit={handleSubmit} className="space-y-4 mt-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-dim-gray">
             Nombre Completo
@@ -80,7 +88,7 @@ export function RSVP() {
             onChange={(e) => setGuests(e.target.value)}
             className="mt-1 block w-full rounded-md border-dim-gray/30 shadow-sm focus:border-onyx focus:ring-onyx bg-antiflash-white/50"
           >
-            {[1, 2, 3, 4, 5].map((num) => (
+            {[1, 2, 3, 4, 5, 6, 7].map((num) => (
               <option key={num} value={num}>
                 {num}
               </option>
