@@ -44,7 +44,7 @@ export function RSVP() {
       {/* Confirmation Message */}
       <div className="mt-4 text-center text-sm text-dim-gray">
         <p>
-          Por cuestiones de organización, te pedimos confirmar a más tardar el 10 de enero y respetar la cantidad de asientos asignados.
+          Por cuestiones de organización, te pedimos respetar la cantidad de asientos asignados.
         </p>
       </div>
 
