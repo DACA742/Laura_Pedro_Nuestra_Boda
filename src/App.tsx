@@ -9,6 +9,8 @@ import { Gallery } from './components/Gallery';
 import { LocationMap } from './components/LocationMap';
 import { RSVP } from './components/RSVP';
 import { GiftRegistry } from './components/GiftRegistry';
+import { Schedule } from './components/Schedule';
+import { SeatingArrangement } from './components/SeatingArrangement';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +34,10 @@ function App() {
           <Story />
           <DateLocation />
           <LocationMap />
+          <Schedule />
+          <SeatingArrangement />
           <Gallery />
           <GiftRegistry />
-          <RSVP />
         </div>
       </motion.div>
     </>

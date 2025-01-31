@@ -10,7 +10,7 @@ export function Header() {
         <h1 className="font-serif text-4xl md:text-5xl">Tatis & Chávez</h1>
         <Heart className="w-6 h-6 animate-pulse" />
       </div>
-      <p className="mt-4 font-light text-dim-gray">Te invitamos a celebrar nuestra boda</p>
+      <p className="mt-4 font-light text-dim-gray">Nuestro gran día, cada vez más cerca.</p>
       <CountdownTimer />
     </header>
   );

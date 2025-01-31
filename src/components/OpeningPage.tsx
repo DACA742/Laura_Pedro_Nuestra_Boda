@@ -21,7 +21,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
       animate={{ opacity: 1 }}
       className="fixed inset-0 bg-cover bg-center bg-no-repeat flex items-center justify-center z-50"
       style={{
-        backgroundImage: 'url("img/hero.jpg")',
+        backgroundImage: 'url("img/TATISCHAVEZ_6.jpg")',
       }}
     >
       <div className="absolute inset-0 bg-eerie-black/40 backdrop-blur-sm" />
@@ -37,7 +37,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
           Tatis & Chávez
         </h1>
         <p className="font-serif text-xl mb-8 text-dim-gray">
-          Nos complace invitarte a celebrar nuestra boda
+          ¡Nos complace contar con tu presencia en nuestra boda!
         </p>
         <button
           onClick={handleOpen}

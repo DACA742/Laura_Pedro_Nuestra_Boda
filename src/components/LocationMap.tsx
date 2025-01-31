@@ -1,78 +1,77 @@
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { motion } from 'framer-motion';
 import { MapPin, Navigation } from 'lucide-react';
 
-const mapContainerStyle = {
-  width: '100%',
-  height: '400px',
-};
-
-// Coordenadas de ambos lugares
-const iglesiaLocation = {
-  lat: 40.4168,  // Ejemplo de coordenadas de la iglesia
-  lng: -3.7038,
-};
-
-const jardinLocation = {
-  lat: 40.4178,  // Ejemplo de coordenadas del jardín
-  lng: -3.7050,
-};
+const locations = [
+  {
+    name: "Cómo Llegar a Ceremonia",
+    address: "Capilla San Peregrino Laziosi",
+    coords: {
+      lat: 21.93138486691548,
+      lng: -102.32432566678644
+    }
+  },
+  {
+    name: "Cómo Llegar a Recepción",
+    address: "Jardin Bellagio",
+    coords: {
+      lat: 21.959258346139094,
+      lng: -102.29930007505855
+    }
+  }
+];
 
 export function LocationMap() {
-  // Función para abrir las direcciones en Google Maps
-  const handleGetDirections = (place: string) => {
-    const url = place === "iglesia" 
-      ? `https://maps.app.goo.gl/7PNY9sbZkRLgvumG8`  // Enlace para la iglesia
-      : `https://maps.app.goo.gl/j4iQEX9smN6fe7Tb8`;     // Enlace para el jardín
-    window.open(url);
+  const handleGetDirections = (coords: { lat: number; lng: number }) => {
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${coords.lat},${coords.lng}`);
   };
 
   return (
     <section className="max-w-4xl mx-auto p-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="bg-antiflash-white/90 rounded-lg shadow-xl overflow-hidden"
-      >
-        <div className="p-6 bg-gradient-elegant">
-          {/* Sección de la Iglesia */}
-          <h2 className="font-serif text-3xl mb-4 text-antiflash-white flex items-center gap-2">
-            <MapPin className="w-6 h-6" />
-            Cómo Llegar a Ceremonia
-          </h2>
-          <p className="text-antiflash-white/90 mb-6">
-            Capilla San Peregrino Laziosi<br />
-          </p>
-          <button
-            onClick={() => handleGetDirections("iglesia")}
-            className="inline-flex items-center px-4 py-2 bg-antiflash-white text-onyx rounded-md hover:bg-antiflash-white/90 transition-colors duration-300"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {locations.map((location, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="bg-antiflash-white/90 rounded-lg shadow-xl overflow-hidden"
           >
-            <Navigation className="w-4 h-4 mr-2" />
-            Obtener Direcciones
-          </button>
-        </div>
-
-        {/* Sección del Jardín */}
-        <div className="p-6 bg-gradient-elegant mt-8">
-          <h2 className="font-serif text-3xl mb-4 text-antiflash-white flex items-center gap-2">
-            <MapPin className="w-6 h-6" />
-            Cómo Llegar a Recepción
-          </h2>
-          <p className="text-antiflash-white/90 mb-6">
-            Jardin Bellagio Ags<br />
-          </p>
-          <button
-            onClick={() => handleGetDirections("jardin")}
-            className="inline-flex items-center px-4 py-2 bg-antiflash-white text-onyx rounded-md hover:bg-antiflash-white/90 transition-colors duration-300"
-          >
-            <Navigation className="w-4 h-4 mr-2" />
-            Obtener Direcciones
-          </button>
-        </div>
-      </motion.div>
+            <div className="p-6 bg-gradient-elegant">
+              <h2 className="font-serif text-3xl mb-4 text-antiflash-white flex items-center gap-2">
+                <MapPin className="w-6 h-6" />
+                {location.name}
+              </h2>
+              <p className="text-antiflash-white/90 mb-2">
+                {location.address}
+              </p>
+              <p className="text-antiflash-white/90 mb-6 font-medium">
+                {location.time}
+              </p>
+              <button
+                onClick={() => handleGetDirections(location.coords)}
+                className="inline-flex items-center px-4 py-2 bg-antiflash-white text-onyx rounded-md hover:bg-antiflash-white/90 transition-colors duration-300"
+              >
+                <Navigation className="w-4 h-4 mr-2" />
+                Obtener Direcciones
+              </button>
+            </div>
+            <div className="w-full h-[300px] bg-gray-100 relative">
+              <iframe
+                src={`https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d925.2714403442384!2d${location.coords.lng}!3d${location.coords.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses-419!2smx!4v1737420799131!5m2!1ses-419!2smx`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              />
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 }

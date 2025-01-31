@@ -1,10 +1,12 @@
 import React from 'react';
 
 const photos = [
-  "img/mano.jpg",
-  "img/Playa2.jpg",
-  "img/Playa.jpg",
-  "img/Playa3.jpg"
+  "img/TATISCHAVEZ_6.jpg",
+  "img/TATISCHAVEZ_20.jpg",
+  "img/TATISCHAVEZ_10.jpg",
+  "img/TATISCHAVEZ_4.jpg",
+  "img/TATISCHAVEZ_2.jpg",
+  "img/TATISCHAVEZ_19.jpg"
 ];
 
 export function Gallery() {
