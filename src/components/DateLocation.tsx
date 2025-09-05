@@ -9,7 +9,7 @@ export function DateLocation() {
         <div className="text-center">
           <Calendar className="w-8 h-8 mx-auto mb-4 text-onyx" />
           <h2 className="font-serif text-2xl mb-2 text-jet">Ceremonia</h2>
-          <p className="text-dim-gray">Sábado, Febrero 15, 2025</p>
+          <p className="text-dim-gray">Sábado, Octubre 11, 2025</p>
           <p className="text-dim-gray">05:30 PM</p>
           <div className="mt-4">
             <MapPin className="w-8 h-8 mx-auto mb-4 text-onyx" />
@@ -22,8 +22,8 @@ export function DateLocation() {
         <div className="text-center">
           <Calendar className="w-8 h-8 mx-auto mb-4 text-onyx" />
           <h2 className="font-serif text-2xl mb-2 text-jet">Recepción</h2>
-          <p className="text-dim-gray">Sábado, Febrero 15, 2025</p>
-          <p className="text-dim-gray">04:00 PM</p>
+          <p className="text-dim-gray">Sábado, Octubre 11, 2025</p>
+          <p className="text-dim-gray">07:30 PM</p>
           <div className="mt-4">
             <MapPin className="w-8 h-8 mx-auto mb-4 text-onyx" />
             <p className="font-serif text-xl mb-2 text-jet">Salón Jardín Quinta San Ignacio</p>
