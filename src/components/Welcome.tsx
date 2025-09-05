@@ -34,7 +34,7 @@ export function Welcome() {
         animate={inView ? { scale: 1 } : {}}
         transition={{ duration: 1.5 }}
         style={{
-          backgroundImage: 'url("img/hero3.jpg")',
+          backgroundImage: 'url("img/hero3/.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'brightness(0.9)',

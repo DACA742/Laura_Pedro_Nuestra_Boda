@@ -53,7 +53,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
       animate={{ opacity: 1 }}
       className="fixed inset-0 bg-cover bg-center bg-no-repeat flex items-center justify-center z-50"
       style={{
-        backgroundImage: 'url("img/hero3.jpg")',
+        backgroundImage: 'url("img/hero3/.jpg")',
       }}
     >
       <div className="absolute inset-0 bg-eerie-black/40 backdrop-blur-sm" />
