@@ -9,7 +9,7 @@ interface OpeningPageProps {
 }
 
 export function OpeningPage({ onOpen }: OpeningPageProps) {
-  const [playSound] = useSound('song.mp3');
+  const [playSound] = useSound('song2.mp3');
 
   const triggerConfetti = () => {
     const duration = 3 * 1000;
