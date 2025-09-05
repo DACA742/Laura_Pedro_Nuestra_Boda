@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Church, Martini, Music, Camera, Cake, Wine, UtensilsCrossed, Users, Frown} from 'lucide-react';
+import { Clock, Church, Martini, Music, Camera, Cake, Wine, UtensilsCrossed, Users, Frown, Heart} from 'lucide-react';
 
 interface TimelineEvent {
   time: string;
@@ -13,19 +13,19 @@ const events: TimelineEvent[] = [
   {
     time: "13:30",
     title: "Ceremonia Religiosa",
-    description: "Iglesia Santa María",
+    description: "Capilla San Peregrino Laziosi",
     icon: <Church className="w-6 h-6" />,
   },
   {
     time: "16:00",
     title: "Cóctel de Bienvenida",
-    description: "Jardín Las Rosas - Terraza Principal",
+    description: "Jardin Bellagio",
     icon: <Martini className="w-6 h-6" />,
   },
   {
     time: "17:00",
     title: "Comida",
-    description: "Jardines y Fuente Central",
+    description: "Rico Buffet",
     icon: <UtensilsCrossed className="w-6 h-6" />,
   },
   {
@@ -52,9 +52,6 @@ const events: TimelineEvent[] = [
     description: "Fin de la boda",
     icon: <Frown className="w-6 h-6" />,
     }
-  
-
-
 ];
 
 export function Schedule() {
@@ -74,41 +71,53 @@ export function Schedule() {
         <p className="text-dim-gray">Acompáñanos en este día tan especial</p>
       </motion.div>
 
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-onyx/20" />
-
-        {/* Timeline events */}
-        <div className="space-y-12">
-          {events.map((event, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`flex items-center gap-8 ${
-                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-              }`}
-            >
-              {/* Content */}
-              <div className={`w-1/2 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                <div className="bg-antiflash-white/90 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <p className="font-serif text-2xl mb-2 text-onyx">{event.time}</p>
-                  <h3 className="font-medium text-xl mb-1 text-jet">{event.title}</h3>
-                  <p className="text-dim-gray">{event.description}</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {events.map((event, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            {/* Decorative top border */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-elegant" />
+            
+            <div className="p-6">
+              {/* Time */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="font-serif text-3xl text-onyx">{event.time}</span>
+                <div className="w-12 h-12 rounded-full bg-antiflash-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  {React.cloneElement(event.icon as React.ReactElement, {
+                    className: "w-6 h-6 text-onyx"
+                  })}
                 </div>
               </div>
 
-              {/* Icon */}
-              <div className="relative z-10 w-12 h-12 rounded-full bg-onyx text-antiflash-white flex items-center justify-center shadow-md">
-                {event.icon}
+              {/* Content */}
+              <div className="space-y-2">
+                <h3 className="font-serif text-xl text-jet group-hover:text-onyx transition-colors duration-300">
+                  {event.title}
+                </h3>
+                <p className="text-dim-gray text-sm">
+                  {event.description}
+                </p>
               </div>
 
-              {/* Empty space for alignment */}
-              <div className="w-1/2" />
-            </motion.div>
-          ))}
+              {/* Decorative line */}
+              <div className="absolute bottom-0 left-4 right-4 h-[1px] bg-gradient-to-r from-transparent via-onyx/10 to-transparent" />
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Decorative elements */}
+      <div className="mt-12 flex justify-center">
+        <div className="flex items-center gap-3">
+          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-onyx/30" />
+          <Heart className="w-4 h-4 text-onyx/30" />
+          <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-onyx/30" />
         </div>
       </div>
     </section>

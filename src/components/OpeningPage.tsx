@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import useSound from 'use-sound';
+import confetti from 'canvas-confetti';
 
 interface OpeningPageProps {
   onOpen: () => void;
@@ -10,18 +11,49 @@ interface OpeningPageProps {
 export function OpeningPage({ onOpen }: OpeningPageProps) {
   const [playSound] = useSound('song.mp3');
 
-  const handleOpen = () => {
-    playSound();
-    onOpen();
+  const triggerConfetti = () => {
+    const duration = 3 * 1000;
+    const animationEnd = Date.now() + duration;
+
+    const randomInRange = (min: number, max: number) => {
+      return Math.random() * (max - min) + min;
+    };
+
+    const frame = () => {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) return;
+
+      const particleCount = 5;
+
+      confetti({
+        particleCount,
+        angle: randomInRange(55, 125),
+        spread: randomInRange(50, 70),
+        origin: { y: 0.6 },
+        colors: ['#3A3220', '#C0862F', '#467FA6'],
+      });
+
+      if (timeLeft > 0) {
+        requestAnimationFrame(frame);
+      }
+    };
+
+    frame();
   };
 
+  const handleOpen = () => {
+    playSound();
+    triggerConfetti();
+    onOpen();
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="fixed inset-0 bg-cover bg-center bg-no-repeat flex items-center justify-center z-50"
       style={{
-        backgroundImage: 'url("img/TATISCHAVEZ_6.jpg")',
+        backgroundImage: 'url("img/hero.jpg")',
       }}
     >
       <div className="absolute inset-0 bg-eerie-black/40 backdrop-blur-sm" />
@@ -34,11 +66,8 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
       >
         <Heart className="w-12 h-12 mx-auto mb-6 text-onyx animate-pulse" />
         <h1 className="font-script text-5xl mb-6 text-jet">
-          Tatis & Chávez
+          Laura & Pedro
         </h1>
-        <p className="font-serif text-xl mb-8 text-dim-gray">
-          ¡Nos complace contar con tu presencia en nuestra boda!
-        </p>
         <button
           onClick={handleOpen}
           className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-antiflash-white bg-onyx rounded-full overflow-hidden transition-all duration-300 ease-out hover:bg-jet focus:outline-none focus:ring-2 focus:ring-dim-gray focus:ring-offset-2"

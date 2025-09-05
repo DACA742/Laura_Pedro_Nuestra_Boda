@@ -68,22 +68,22 @@ export function Welcome() {
             variants={textVariants}
             className="font-script text-6xl md:text-8xl mb-6 text-antiflash-white"
           >
-            Tatis & Chávez
+            Laura & Pedro
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Thank You Message */}
           <motion.div
-            custom={2}
+            custom={4}
             variants={textVariants}
-            className="space-y-4 mb-8"
+            className="mt-0"
           >
-            <p className="font-serif text-2xl md:text-3xl text-antiflash-white/90">
-              ¡Nos Casamos!
-            </p>
+            <div className="max-w-2xl mx-auto px-6 py-2 backdrop-blur-sm bg-antiflash-white/10 rounded-lg border border-antiflash-white/20">
+              <p className="text-lg text-antiflash-white/90 font-serif">
+                Tu presencia hará de este día algo aún más especial.
+              </p>
+            </div>
           </motion.div>
-
-
-        </motion.div>
+        </motion.div>     
       </div>
 
       {/* Scroll Indicator - Now positioned at the bottom with margin */}

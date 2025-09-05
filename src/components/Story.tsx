@@ -52,8 +52,8 @@ export function Story() {
             Padres de la Novia:
           </p>
           <div className="text-xl text-dim-gray">
-            <p>Roberto Ocaña</p>
-            <p>Yolanda Bueno</p>
+            <p>Ma. De Los Angeles Lazarin Soto</p>
+            <p>Noé Carlos Luna Pérez</p>
           </div>
 
           {/* Parents of the Groom */}
@@ -61,8 +61,8 @@ export function Story() {
             Padres del Novio:
           </p>
           <div className="text-xl text-dim-gray">
-            <p>Raul Chávez</p>
-            <p>Beatriz Arteaga</p>
+            <p>Silvia Chávez Martínez </p>
+            <p>J. Jesús Alonso Ramírez </p>
           </div>
 
           {/* Padrinos de Velación */}
@@ -70,8 +70,8 @@ export function Story() {
             Padrinos de Velación:
           </p>
           <div className="text-xl text-dim-gray">
-            <p>Jaime Meza</p> {/* Reemplaza con el nombre real */}
-            <p>Araceli Bueno</p> {/* Reemplaza con el nombre real */}
+            <p>Rafael Romo Barba </p> {/* Reemplaza con el nombre real */}
+            <p>Ma. Esperanza Chávez Martínez</p> {/* Reemplaza con el nombre real */}
           </div>
         </motion.div>
       </div>

@@ -7,69 +7,105 @@ const tables = [
   {
     id: 1,
     name: 'Mesa 1',
-    guests: ['Beatriz Arteaga', 'Alma Galván', 'Alma Truebaz', 'Raul Chavez A.', 'Yannin Badillo', 'Paola Chávez', 'Isabel Arteaga', 'Benjamin', 'Ricardo Rabling'],
+    guests: ['Beatriz Arteaga','Paola Chávez', 'Alma Galván', 'Alma Trueba', 'Raul Chavez A.', 'Yannin Badillo', 'Isabel Arteaga', 'Benjamin', 'Ricardo Rabling'],
   },
   {
     id: 2,
     name: 'Mesa 2',
-    guests: ['Gaby Rabling', 'Julio Martínez', 'Valentina Martínez', 'Julieta Martínez', 'Karla Rabling', 'Boris Campos', 'Noah Campos', 'Juliana Campos', 'Dante Martínez','Tania Callejo'],
+    guests: ['Gaby Rabling', 'Julio Martínez', 'Valentina M.', 'Julieta M.', 'Karla Rabling', 'Boris Campos', 'Noah Campos', 'Juliana Campos', 'Dante Martínez','Tania Callejo'],
   },
   {
     id: 3,
     name: 'Mesa 3',
-    guests: ['Yolanda Bueno', 'Maria de Jesus', 'Araceli Bueno', 'Jaime Meza', 'Adrian Bueno', 'Claudia Ruelas', 'Dominica Bueno', 'Irma Bueno', 'Oscar Romo','Macarena C.'],
-  },
-
+    guests: ['Irma Bueno', 'Alma Molina', 'Julio Bueno', 'Claudia Ruelas', 'Dominica Bueno', 'Antonio Lopez', 'Johana','Antonio Lopez Jr.','Fer Lopez','Macarena C.','Macarena C. +1'],
+  },   
   {
     id: 4,
     name: 'Mesa 4',
-    guests: ['Paula Romo','Ricardo Cervantes','Clémentine Cloerec','Mauricio Romo','Diana Romo','Raul Peña','Palmira Meza','Roberto Ocaña B.','Alejandro Segura','Karina Zacarias','Jose Garcia'],
+    guests: ['Paula Romo','Ricardo C.','Clémentine C.','Mauricio Romo','Diana Romo','Raul Peña','Magui Peña','Alexis Casillas','Palmira Meza','Antonio Bueno'],
   },
   {
     id: 5,
     name: 'Mesa 5',
-    guests: ['Ma Beatriz López','Vanessa Castañon','Juan Manuel','Alondra Castañon','Diego Castañon','Paloma Lopez','Tere Martínez'],
+    guests: ['Yolanda Silva','Carlos H.','Kassandra H.','Vanessa H.','Victoria H.','Lupita Nuñez','Valeria Nuñez','Jaime Silva'],  
   },
   {
     id: 6,
     name: 'Mesa 6',
-    guests: ['Antonio Bueno N.','Laura Delgadillo','Sofia Bueno','Eduardo Bueno','Araceli Vazquez','Antonio Bueno','Antonio Lopez','Joana','Antonio Lopez Jr','Fernanda Lopez'],
-  },
+    guests: ['Yolanda Bueno','Gustavo R.', 'Maria de Jesus', 'Oscar Romo', 'Araceli Bueno', 'Jaime Meza', 'Antonio Bueno', 'Laura Delgadillo' ,'Alejandro Segura','Karina Zacarias','Roberto Ocaña B.'],
+  },  
   {
     id: 7,
     name: 'Mesa 7',
-    guests: ['Yolanda Silva','Carlos Hernández','Kassandra H.','Vanessa H.','Victoria H.','Lupita Nuñez','Valeria Nuñez','Jaime Silva'],
-  },
+    guests: ['Beatriz López','Vanessa C.','Juan Manuel','Alondra C.','Diego C.','Paloma Lopez','Tere Martínez','Sofia Bueno','Sofia Bueno +1','Eduardo Bueno','Araceli Vazquez'],
+  },    
   {
     id: 8,
     name: 'Mesa 8',
-    guests: ['Ignacio Lozano','Mayela','Alma Delgado','Jorge Reyes','Claudia Perez','Marco','Norma Echeverria','Patricia Muñiz','Eduardo Garcia','Blanca Loera','Pablo'],
-  },
+    guests: ['Ignacio Lozano','Ignacio Lozano +1','Alma Delgado','Alma Delgado +1','Claudia Pérez','Claudia Pérez +1','Patricia Muñiz','Patricia Muñiz +1','Blanca Loera','Blanca Loera +1','Norma E.'],
+  }, 
   {
     id: 9,
     name: 'Mesa 9',
-    guests: ['Mireya Delgadillo','Veronica Ibarra', 'Veronica Ibarra Acompañante','Lupita Cortes', 'Lupita Cortes Acompañante','Irma Cortes','Efren Castañeda','Efren Castañeda Acompañante'],
-  },
+    guests: ['Irma Cortes +1','Irma Cortes','Veronica Ibarra', 'Veronica Ibarra +1','Lupita Cortes', 'Lupita Cortes +1','Efren C.','Efren C. +1','Mireya Gloria'],
+  },  
   {
     id: 10,
     name: 'Mesa 10',
-    guests: ['Bere Muñoz','Juan Montiel','Claudia Mora','Alfredo Romo','Alejandra Martínez','Miguel Jiménez','Imelda Cardona','Reynaldo Martínez'],
+    guests: ['Bere Muñoz','Bere Muñoz +1','Claudia Mora','Claudia Mora +1','Alejandra M.','Alejandra M. +1','Osvaldo V.','Osvaldo V. +1'],
   },
   {
     id: 11,
     name: 'Mesa 11',
-    guests: ['Raul Chávez M.','Rosio','Esperanza Chávez M.','Rafael Romo','Nadia Romo','Rodrigo Romo','Cherry Romo','Silvia Chávez M.','Elizabeth Chávez M.','Jesus Alonso','Pedro D. Alonso','Ana Laura'],
+    guests: ['Raul Chávez M.','Rocio Parra','Esperanza C.','Rafael Romo','Nadia Romo','Rodrigo Romo','Cherry Romo','Elizabeth Chávez','Silvia Chávez','Jesus Alonso'],
   },
   {
     id: 12,
-    name: 'Mesa 11',
-    guests: ['Raul Chávez M.','Rosio','Esperanza Chávez M.','Rafael Romo','Nadia Romo','Rodrigo Romo','Cherry Romo','Silvia Chávez M.','Elizabeth Chávez M.','Jesus Alonso','Pedro D. Alonso','Ana Laura'],
+    name: 'Mesa 12',
+    guests: ['Sammy Chávez M.','Jesus Torres','Dioni Torres','Israel','Rafael Torres','Alejandra','Pedro D. Alonso','Ana Laura','Jesus Eduardo Alonso'],
+  },   
+  
+  {
+    id: 13,
+    name: 'Mesa 13',
+    guests: ['Manuel Ocaña','Carmen Aguayo','Lorena Aguayo','Manuel Ocaña Jr.','Denisse Ocaña','Denisse Ocaña +1','Jackeline O.','Jackeline O. +1', 'Reyna Ocaña','Genaro Gtz.','Valentina Gtz.','Miranda Gtz.']
   },
+  {
+    id: 14,
+    name: 'Mesa 14',
+    guests: ["Carlos Gonzalez Serrano","Roxana Mesinas","Maricela Vega", "Héctor Silos", "Melani Silos", "Melani Silos +1", "Héctor Quiroz", "Héctor Quiroz +1", "Patricia Gómez", "Patricia Gómez +1"],
+  },  
+  {
+    id: 15,
+    name: 'Mesa 15',
+    guests: ["Josseline Márquez", "Juan Manuel", "Rodrigo Ortiz", "Karla Ornelas", "Daniel Marfileño", "Diego Ruiz", "Dante Hdz.", "Eduardo C.", "Diana Carrillo","Diana Carrillo +1", "Odalys Pérez"],
+  },    
+  {
+    id: 16,
+    name: 'Mesa 16',
+    guests: ["Roberto Ocaña", "Julieta de la Cruz", "Ofelia Ramos", "Ofelia Ramos +1", "Blanca Ocaña", "Jesús Schz.", "Ivana Schz.", "Ivana Schz. +1",'Agustin Damasco','Sandra',"Renata Ocaña"],
+  },  
+  {
+    id: 17,
+    name: 'Mesa 17',
+    guests: ["Luis G. Mesinas", "Alexa Machain","Miguel C.", "Meli Muñoz","Pau Gtz", "Edgar Mtz.", "Oscar A.", "Lau", "Richy Garcia", "Fatima","Mauricio Ramirez","Paola Gtz."],
+  },  
+  {
+    id: 18,
+    name: 'Mesa 18',
+    guests: ["Marilyn DLC.", "Mariano", "Eli DLC.","Johana DLC.", "Gisella Mercz", "Eliza Esparza", "Jose DLC.", "Jose DLC. +1","Linda Fierro","Rafael DLC.","Celia","Obed"],
+  },
+  {
+    id: 19,
+    name: 'Mesa 19',
+    guests: ["Romeo B.", "Romeo B. +1", "Salvador E.", "Salvador E. +1","Juan Carlos","Juan Carlos +1","Fidel Mendoza",'Gerardo Horta','Gerardo Horta +1','Carlos Ocaña','Olga Herrera'],
+  },    
+
   // Añade más mesas con sus invitados específicos
   {
     id: 21,
     name: 'Mesa Nupcial',
-    guests: ['Novio', 'Novia', 'Padre del Novio', 'Madre del Novio', 'Padre de la Novia', 'Madre de la Novia'],
+    guests: ['Tatis Ocaña', 'Daniel Chávez'],
   },
 ];
 

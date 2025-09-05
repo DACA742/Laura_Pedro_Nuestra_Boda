@@ -5,18 +5,18 @@ import { MapPin, Navigation } from 'lucide-react';
 const locations = [
   {
     name: "Cómo Llegar a Ceremonia",
-    address: "Capilla San Peregrino Laziosi",
+    address: "Parroquia De Nuestra Señora de los Bosques",
     coords: {
-      lat: 21.93138486691548,
-      lng: -102.32432566678644
+      lat: 21.922304229764972,
+      lng: -102.30860472752323
     }
   },
   {
     name: "Cómo Llegar a Recepción",
-    address: "Jardin Bellagio",
+    address: "Salón Jardín Quinta San Ignacio",
     coords: {
-      lat: 21.959258346139094,
-      lng: -102.29930007505855
+      lat: 21.901367492230946,
+      lng: -102.34046635364251
     }
   }
 ];

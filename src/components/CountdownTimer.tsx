@@ -13,7 +13,7 @@ export function CountdownTimer() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const weddingDate = new Date('2025-02-15T13:30:00');
+      const weddingDate = new Date('2025-11-15T13:30:00');
       const difference = weddingDate.getTime() - new Date().getTime();
 
       if (difference > 0) {
@@ -28,23 +28,25 @@ export function CountdownTimer() {
 
     const timer = setInterval(calculateTimeLeft, 1000);
     calculateTimeLeft();
-
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="mt-6 inline-flex flex-col items-center">
-      <div className="flex items-center gap-2 mb-2 text-dim-gray">
+      <div className="flex items-center gap-2 mb-2 text-[#3A3220]">
         <Clock className="w-4 h-4" />
-        <span className="text-sm">Cuenta Regresiva</span>
+        <span className="text-sm font-semibold">Cuenta Regresiva</span>
       </div>
       <div className="flex gap-4 text-center">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <div key={unit} className="flex flex-col items-center">
-            <div className="w-16 h-16 flex items-center justify-center bg-onyx text-antiflash-white rounded-lg shadow-md">
+            <div
+              className="w-16 h-16 flex items-center justify-center rounded-lg shadow-md"
+              style={{ backgroundColor: "#C0863F", color: "#fff" }}
+            >
               <span className="text-2xl font-bold">{value}</span>
             </div>
-            <span className="mt-1 text-xs text-dim-gray capitalize">
+            <span className="mt-1 text-xs text-[#3A3220]/80 capitalize">
               {unit}
             </span>
           </div>

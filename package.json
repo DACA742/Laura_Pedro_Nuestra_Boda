@@ -1,5 +1,5 @@
 {
-  "name": "Tatis_Chavez_Nuestra_Boda",
+  "name": "Laura_Pedro_Nuestra_Boda",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,10 @@
     "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://daca742.github.io/Tatis_Chavez_Nuestra_Boda",
+  "homepage": "https://daca742.github.io/Laura_Pedro_Nuestra_Boda",
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
+    "canvas-confetti": "^1.9.2",
     "framer-motion": "^11.0.8",
     "fund": "^1.0.0",
     "gulp": "^5.0.0",

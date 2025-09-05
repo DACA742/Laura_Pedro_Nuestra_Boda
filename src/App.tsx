@@ -6,11 +6,11 @@ import { Header } from './components/Header';
 import { DateLocation } from './components/DateLocation';
 import { Story } from './components/Story';
 import { Gallery } from './components/Gallery';
+import { Schedule } from './components/Schedule';
 import { LocationMap } from './components/LocationMap';
+import { SeatingArrangement } from './components/SeatingArrangement';
 import { RSVP } from './components/RSVP';
 import { GiftRegistry } from './components/GiftRegistry';
-import { Schedule } from './components/Schedule';
-import { SeatingArrangement } from './components/SeatingArrangement';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,14 +30,12 @@ function App() {
       >
         <Welcome />
         <div className="max-w-6xl mx-auto px-4 py-12 space-y-24">
-          <Header />
+        <Header />
           <Story />
           <DateLocation />
           <LocationMap />
-          <Schedule />
-          <SeatingArrangement />
           <Gallery />
-          <GiftRegistry />
+          <RSVP />
         </div>
       </motion.div>
     </>
