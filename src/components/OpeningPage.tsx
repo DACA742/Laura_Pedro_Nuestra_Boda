@@ -12,7 +12,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
   const [playSound] = useSound('song2.mp3');
 
   const triggerConfetti = () => {
-    const duration = 3 * 1000;
+    const duration = 5 * 1000;
     const animationEnd = Date.now() + duration;
 
     const randomInRange = (min: number, max: number) => {

@@ -9,9 +9,9 @@ export default {
         script: ['Great Vibes', 'cursive'],
       },
       colors: {
-        onyx: '#404040',
+        onyx: '#C0862F',
         'eerie-black': '#212121',
-        jet: '#313131',
+        jet: '#C0862F',
         'dim-gray': '#6B6B6B',
         'antiflash-white': '#ECECEC',
       },
@@ -19,8 +19,9 @@ export default {
         fadeIn: 'fadeIn 0.5s ease-out',
       },
       backgroundImage: {
-        'gradient-elegant': 'linear-gradient(135deg, #404040 0%, #212121 25%, #313131 50%, #6B6B6B 75%, #ECECEC 100%)',
+        'gradient-elegant': 'linear-gradient(135deg, #C0862F 0%, #A86E22 25%, #704C18 50%, #3A2A12 75%, #1A1A1A 100%)',
       },
+
     },
   },
   plugins: [],
