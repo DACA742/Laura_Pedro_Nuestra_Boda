@@ -31,7 +31,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
         angle: randomInRange(55, 125),
         spread: randomInRange(50, 70),
         origin: { y: 0.6 },
-        colors: ['#3A3220', '#C0862F', '#467FA6'],
+        colors: ['#ffffffff', '#C0862F'],
       });
 
       if (timeLeft > 0) {
@@ -66,7 +66,7 @@ export function OpeningPage({ onOpen }: OpeningPageProps) {
       >
         <Heart className="w-12 h-12 mx-auto mb-6 text-onyx animate-pulse" />
         <h1 className="font-script text-5xl mb-6 text-jet">
-          Laura & Pedro
+          Silvia & Jesus
         </h1>
         <button
           onClick={handleOpen}

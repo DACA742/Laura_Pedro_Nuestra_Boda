@@ -1,5 +1,5 @@
 {
-  "name": "Laura_Pedro_Nuestra_Boda",
+  "name": "Silvia_Jesus_Nuestra_Boda",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://daca742.github.io/Laura_Pedro_Nuestra_Boda",
+  "homepage": "https://daca742.github.io/Silvia_Jesus_Nuestra_Boda",
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
     "canvas-confetti": "^1.9.2",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

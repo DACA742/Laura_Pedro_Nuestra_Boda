@@ -68,7 +68,7 @@ export function Welcome() {
             variants={textVariants}
             className="font-script text-6xl md:text-8xl mb-6 text-antiflash-white"
           >
-            Laura & Pedro
+            Silvia & Jesus
           </motion.h1>
 
           {/* Thank You Message */}
